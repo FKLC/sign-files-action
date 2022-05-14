@@ -1,0 +1,30 @@
+name: 'Sign Files Action'
+description: 'Create signature files with the given private key'
+branding:
+  icon: 'check-circle'
+  color: 'gray-dark'
+inputs:
+  algorithm:
+    description: 'Algorithm used to sign the files'
+    required: false
+    default: 'RSA-SHA256'
+  privateKey:
+    description: 'The private key that will be used to sign the files'
+    required: true
+  passphrase:
+    description: 'Private key passphrase'
+    required: false
+  files:
+    description: 'Files to sign'
+    required: true
+  extension:
+    description: 'File extension that will be added at the end of file names'
+    required: false
+    default: '.sig'
+  outputFolder:
+    description: 'Target folder to place signature files'
+    required: false
+    default: './'
+runs:
+  using: 'node16'
+  main: 'dist/index.js'
