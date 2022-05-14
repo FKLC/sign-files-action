@@ -13,7 +13,7 @@ With this Action, you can create signatures of files in the target directory jus
 
 ## Usage Example with All Inputs
 ```yaml
-uses: 'FKLC/sign-files-action@latest'
+uses: 'FKLC/sign-files-action@v1.0.0'
 with:
   privateKey: ${{ secrets.PRIVATE_KEY }}
   passphrase: ${{ secrets.PASSPHRASE }}
