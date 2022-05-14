@@ -25,6 +25,9 @@ inputs:
     description: 'Target folder to place signature files'
     required: false
     default: './'
+  encoding:
+    description: 'Encoding of signature'
+    required: false
 runs:
   using: 'node16'
   main: 'dist/index.js'

@@ -15,7 +15,7 @@ const getInput = (name, defVal, required = false) => {
 const algorithm = getInput('algorithm', 'RSA-SHA256');
 const privateKey = getInput('privateKey', null, true);
 const passphrase = getInput('passphrase');
-const encoding = getInput('encoding', 'binary');
+const encoding = getInput('encoding');
 const filesPath = getInput('files', null, true);
 const extension = getInput('extension', '.sig');
 const outputFolder = getInput('outputFolder', 'build/');

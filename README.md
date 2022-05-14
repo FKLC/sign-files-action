@@ -10,6 +10,7 @@ With this Action, you can create signatures of files in the target directory jus
 | algorithm    | Algorithm used to sign the files                           | No       | `'RSA-SHA256'` |
 | extension    | File extension that will be added at the end of file names | No       | `'.sig'`       |
 | outputFolder | Target folder to create signature files in                 | No       | `'./'`         |
+| encoding     | Encoding type of signature                                 | No       | `null`         |
 
 ## Usage Example with All Inputs
 ```yaml
